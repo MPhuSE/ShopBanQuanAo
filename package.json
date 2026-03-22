@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "clean": "node scripts/next-runner.js clean",
-    "dev": "node scripts/next-runner.js dev",
-    "build": "node scripts/next-runner.js build",
-    "start": "node scripts/next-runner.js start",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
   },
