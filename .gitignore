@@ -5,3 +5,8 @@ dist
 .env
 .env.local
 .env.*.local
+.next/
+.next-build/
+.next-dev/
+out/
+build/
