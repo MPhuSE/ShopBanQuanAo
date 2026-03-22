@@ -29,22 +29,23 @@ export default async function HomePage() {
                 ràng, thanh toán QR và có trang tra cứu đơn để khách an tâm hơn.
               </p>
 
-              <div className="mt-7 flex flex-wrap gap-3">
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <Link
                   href="/products"
-                  className="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-[color:var(--brand-strong)]"
+                  className="inline-flex min-h-12 w-full items-center justify-center rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold !text-slate-900 shadow-[0_12px_24px_rgba(15,23,42,0.12)] transition hover:-translate-y-0.5 hover:bg-slate-100 sm:w-auto"
+                  style={{ color: "#0f172a" }}
                 >
                   Xem sản phẩm
                 </Link>
                 <Link
                   href="/track-order"
-                  className="rounded-xl border border-white/30 px-5 py-3 text-sm font-semibold text-white"
+                  className="inline-flex min-h-12 w-full items-center justify-center rounded-xl border border-white/30 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:-translate-y-0.5 hover:bg-white/15 sm:w-auto"
                 >
                   Tra cứu đơn
                 </Link>
                 <a
                   href={`tel:${SHOP_HOTLINE}`}
-                  className="rounded-xl border border-white/30 px-5 py-3 text-sm font-semibold text-white"
+                  className="inline-flex min-h-12 w-full items-center justify-center rounded-xl border border-white/30 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:-translate-y-0.5 hover:bg-white/15 sm:w-auto"
                 >
                   Hotline: {SHOP_HOTLINE}
                 </a>

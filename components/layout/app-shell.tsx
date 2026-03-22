@@ -14,9 +14,9 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <SiteHeader />
-      <main className="container-shell pb-16 pt-8 md:pb-20 md:pt-10">{children}</main>
+      <main className="container-shell pb-14 pt-6 md:pb-20 md:pt-8">{children}</main>
       <SiteFooter />
     </div>
   );
