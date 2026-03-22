@@ -6,10 +6,12 @@ const mode = process.argv[2];
 const extraArgs = process.argv.slice(3);
 const cwd = process.cwd();
 
+const isVercel = process.env.VERCEL === "1";
+
 const DIST_DIRS = {
   dev: ".next-dev",
-  build: ".next-build",
-  start: ".next-build"
+  build: isVercel ? ".next" : ".next-build",
+  start: isVercel ? ".next" : ".next-build"
 };
 
 function removeDir(target) {
