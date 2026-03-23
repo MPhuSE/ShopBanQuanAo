@@ -40,13 +40,13 @@ export function PaymentQrCard({
     <>
       <Toast open={Boolean(toast)} message={toast?.message ?? null} tone={toast?.tone} />
       <div className="surface-card rounded-[30px] p-6 md:p-7">
-        <div className="grid gap-6 xl:grid-cols-[0.88fr_1.12fr] xl:items-center">
-          <div className="surface-panel overflow-hidden rounded-[28px] p-4">
-            <div className="rounded-[24px] bg-white p-4">
+        <div className="grid gap-6 xl:grid-cols-[1fr_1fr] xl:items-center">
+          <div className="surface-panel overflow-hidden rounded-[28px] p-3 md:p-4">
+            <div className="rounded-[24px] bg-white p-3 md:p-4">
               <img
                 src={qrImageUrl}
                 alt="QR thanh toán"
-                className="mx-auto aspect-square w-full max-w-80 object-contain"
+                className="mx-auto aspect-square w-full max-w-[26rem] object-contain md:max-w-[30rem]"
               />
             </div>
           </div>
