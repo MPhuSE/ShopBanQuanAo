@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         {
           error:
-            "Chưa cấu hình QR thanh toán. Thêm PAYMENT_QR_IMAGE_URL và thông tin tài khoản trong .env.local."
+            "Chưa cấu hình thanh toán. Thêm thông tin tài khoản ngân hàng trong .env.local, ảnh QR đã cố định tại /public/qr.jpg."
         },
         { status: 500 }
       );

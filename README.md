@@ -48,7 +48,6 @@ NEXT_PUBLIC_SITE_URL=http://localhost:3000
 NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
 SUPABASE_SERVICE_ROLE_KEY=
-PAYMENT_QR_IMAGE_URL=
 PAYMENT_BANK_NAME=
 PAYMENT_ACCOUNT_NAME=
 PAYMENT_ACCOUNT_NUMBER=
@@ -58,6 +57,7 @@ PAYMENT_NOTE_PREFIX=DH
 ## Luu y nghiep vu
 
 - Khach thanh toan bang QR cua shop
+- Anh QR duoc lay co dinh tu `public/qr.jpg`, khong can env rieng cho link anh
 - Admin xac nhan thu cong de doi `payment_status = paid`
 - Don da nhan tien se vao `processing`, admin xu ly roi chuyen `completed`
 - Admin khong duoc chuyen `completed` neu payment chua `paid`

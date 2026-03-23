@@ -21,3 +21,4 @@ export const ADMIN_MUTABLE_ORDER_STATUSES = [
 
 export const SHOP_HOTLINE = "0981460071";
 export const SHOP_EMAIL = "lhmp8686@gmail.com";
+export const SHOP_QR_IMAGE_URL = "/qr.jpg";

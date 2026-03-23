@@ -127,7 +127,7 @@ export default async function PaymentPage({
               <p className="mt-3 text-sm leading-7 text-[color:var(--text-soft)]">
                 {isPaid
                   ? "Bạn có thể dùng trang tra cứu để theo dõi bước xử lý tiếp theo cho đơn hàng này."
-                  : "Hãy bổ sung PAYMENT_QR_* trong env để hiển thị QR thanh toán."}
+                  : "Hãy bổ sung thông tin tài khoản ngân hàng trong env. Ảnh QR đang được cố định từ /public/qr.jpg."}
               </p>
             </div>
           )}

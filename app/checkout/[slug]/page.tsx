@@ -44,7 +44,7 @@ export default async function CheckoutPage({
         ) : !canPurchase ? (
           <ConfigNotice message="Sản phẩm này hiện đã hết tồn kho nên chưa thể tạo đơn mới." />
         ) : (
-          <ConfigNotice message="Trang checkout đã sẵn sàng, nhưng bạn cần thêm Supabase env và bộ PAYMENT_QR_* trong .env.local để tạo đơn và hiển thị QR thanh toán." />
+          <ConfigNotice message="Trang checkout đã sẵn sàng, nhưng bạn cần thêm Supabase env và thông tin tài khoản ngân hàng trong .env.local để tạo đơn. Ảnh QR đang dùng cố định từ /public/qr.jpg." />
         )}
       </div>
 
